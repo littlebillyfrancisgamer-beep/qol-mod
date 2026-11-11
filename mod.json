@@ -1,0 +1,72 @@
+{
+    "geode": "3.9.1",
+    "gd": {
+        "win": "2.2074",
+        "android": "2.2074",
+        "mac": "2.2074"
+    },
+    "version": "v1.0.0",
+    "id": "com.yourname.qolmod",
+    "name": "QoL Mod Menu",
+    "developer": "YourName",
+    "description": "A quality-of-life mod menu for Geometry Dash with handy toggles: hide attempts/UI, show FPS, disable background shake, disable flash effects, and auto-features for practice mode.",
+    "repository": "https://github.com/yourname/qol-mod-menu",
+    "tags": ["interface", "enhancement", "utility"],
+    "gdApi": true,
+    "settings": {
+        "hide-attempts": {
+            "name": "Hide Attempts Label",
+            "description": "Hides the attempt counter label while playing a level.",
+            "type": "bool",
+            "default": false
+        },
+        "hide-percentage": {
+            "name": "Hide Percentage Label",
+            "description": "Hides the percentage counter label while playing a level.",
+            "type": "bool",
+            "default": false
+        },
+        "disable-shake": {
+            "name": "Disable Screen Shake",
+            "description": "Disables the camera shake effect triggered by shake game objects.",
+            "type": "bool",
+            "default": false
+        },
+        "disable-flash": {
+            "name": "Disable Flash Effects",
+            "description": "Disables the white/colored flash effects from certain triggers.",
+            "type": "bool",
+            "default": false
+        },
+        "show-fps": {
+            "name": "Show FPS Counter",
+            "description": "Displays a live FPS counter in the corner of the screen.",
+            "type": "bool",
+            "default": true
+        },
+        "auto-checkpoint": {
+            "name": "Auto Checkpoint (Practice)",
+            "description": "Automatically places a practice checkpoint every few seconds while in practice mode.",
+            "type": "bool",
+            "default": false
+        },
+        "auto-checkpoint-interval": {
+            "name": "Auto Checkpoint Interval (sec)",
+            "description": "How often (in seconds) to automatically place a checkpoint in practice mode.",
+            "type": "float",
+            "default": 3.0,
+            "min": 1.0,
+            "max": 15.0
+        },
+        "disable-death-effect": {
+            "name": "Disable Death Particles",
+            "description": "Removes the particle burst effect when the player dies, for a cleaner screen.",
+            "type": "bool",
+            "default": false
+        }
+    },
+    "resources": {
+        "sprites": [],
+        "fonts": {}
+    }
+}
